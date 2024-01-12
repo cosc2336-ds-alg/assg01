@@ -1,7 +1,7 @@
 ---
 title: 'Assignment Functions: Review of Functions and Arrays'
 author: 'COSC 2336: Data Structures and Algorithms'
-date: 'Spring 2023'
+date: 'Spring 2024'
 ---
 
 
@@ -54,11 +54,15 @@ whole calculation to get the final standard deviation.
 
 So for our example $x$ array, the standard deviation would be calculated as
 
-\begin{align*}
-s &= \sqrt{\frac{1}{n} \big[ (x_0 - \bar{x})^2 + (x_1 - \bar{x})^2 + (x_2 - \bar{x})^2 + (x_3 - \bar{x})^2 + (x_4 - \bar{x})^2 \big] } \\
-  &= \sqrt{\frac{1}{5} \big[ (5 - 3.8)^2 + (3 - 3.8)^2 + (8 - 3.8)^2 + (2 - 3.8)^2 + (1 - 3.8)^2 \big] } \\
-  &\approx 2.4819
-\end{align*}
+$$
+s = \sqrt{\frac{1}{n} \big[ (x_0 - \bar{x})^2 + (x_1 - \bar{x})^2 + (x_2 - \bar{x})^2 + (x_3 - \bar{x})^2 + (x_4 - \bar{x})^2 \big] }
+$$
+$$
+s = \sqrt{\frac{1}{5} \big[ (5 - 3.8)^2 + (3 - 3.8)^2 + (8 - 3.8)^2 + (2 - 3.8)^2 + (1 - 3.8)^2 \big] }
+$$
+$$
+  s \approx 2.4819
+$$
 
 We will be emphasizing the writing and reuse of functions in this assignment.
 You will build several smaller functions that will be reused to do most of the
@@ -82,7 +86,8 @@ finish the following setup steps.
    on GitHub using the provided assignment invitation link for the
    'Assignment Functions' for our current class semester and section.
 2. Clone the repository to your DevBox using the SSH URL to your local
-   class DevBox development environment.
+   class DevBox development environment.  Make sure that open the cloned
+   folder and restart inside of the correct Dev Container.
 3. Confirm that the project builds and runs, though no tests may be be
    defined or run initially.  If the project does not build on the first
    checkout, please inform the instructor.
