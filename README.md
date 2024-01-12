@@ -57,9 +57,11 @@ So for our example $x$ array, the standard deviation would be calculated as
 $$
 s = \sqrt{\frac{1}{n} \big[ (x_0 - \bar{x})^2 + (x_1 - \bar{x})^2 + (x_2 - \bar{x})^2 + (x_3 - \bar{x})^2 + (x_4 - \bar{x})^2 \big] }
 $$
+
 $$
 s = \sqrt{\frac{1}{5} \big[ (5 - 3.8)^2 + (3 - 3.8)^2 + (8 - 3.8)^2 + (2 - 3.8)^2 + (1 - 3.8)^2 \big] }
 $$
+
 $$
   s \approx 2.4819
 $$
