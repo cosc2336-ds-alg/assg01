@@ -288,7 +288,7 @@ calculation of the standard deviation in the following manner.
    again.  Notice you are (re)using this function 2 times in the implementation
    of your standard deviation calculation.
 5. The final result then is the square root of the mean of these squared differences.
-   So you are require to use the `sqrt()` function from `cmath` to get the square root
+   So you are required to use the `sqrt()` function from `cmath` to get the square root
    of this result.  This should be the final standard deviation that your function
    will return.
    
