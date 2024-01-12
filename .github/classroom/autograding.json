@@ -2,7 +2,6 @@
   "tests": [
     {
       "name": "test successfully builds",
-      "setup": "./configure",
       "run": "make",
       "input": "",
       "output": "",
