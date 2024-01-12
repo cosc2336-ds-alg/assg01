@@ -233,13 +233,14 @@ create and push a commit to the `Feedback` pull request.
 
 Perform the usual prerequisite steps before starting task 4.
 
-Once you have your program running the tests again, implement the
+Once you have your program running the tests for tasks 1-3, implement the
 `squareOfValues()` function.  This function will work in a similar
 manner to the previous function.  It is a void function because the work
-it does is done on the values of the array passed in as a parameter.  
+it does is done on the values of the array passed in as a parameter.
+
 This function simply squares all of the values in the array, so there will
-be no third parameter for this function, simply the array of doubles (and
-the array size) passed in as the 2 input parameters.  But like before this
+be no third parameter for this function. The array of doubles (and
+the array size) are passed in as the 2 input parameters.  But like before this
 is a void function because the results will be stored back in the array
 to be returned to the caller by reference.
 

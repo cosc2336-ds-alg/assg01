@@ -19,4 +19,6 @@ Make sure that the calculation is done in place in the given array.  The results
 
 - The array of values needs to be modified in place in this function.
 - The resulting values after this funciton finishes will be the squares of the originally passed in values.
+- You are required to (re)use the `<cmath>` library and call the `pow()` function
+  to raise the values to the second power (e.g. to square them).
 
