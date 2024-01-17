@@ -9,7 +9,7 @@ assignees: ''
 
 **Description**
 
-Implement the `squareOfValues()` function.  This function works similarly to the one you should implement in the previous Issue #3.  This function does not return a result.  The funciton only has 2 input parameters, an array of `double` values to be worked with, and the number of values in this array.  The function should simply square each value in place in the array.
+Implement the `squareOfValues()` function.  This function works similarly to the one you should implement in the previous Issue #3.  This function does not return a result.  The function only has 2 input parameters, an array of `double` values to be worked with, and the number of values in this array.  The function should simply square each value in place in the array.
 
 **Suggested Solution**
 

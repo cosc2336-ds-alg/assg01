@@ -13,7 +13,7 @@ Implement the `calculateStandardDeviation()` function.  This function will reuse
 
 **Suggested Solution**
 
-You will not need to write any loops.  You will need to reuse most all of the previous function in this function.  You will need to reuse and call `calculateMean()` two times in this function implementation.  The general steps to implement the standard devition should be:
+You will **NOT** need to write any loops.  You will need to reuse most all of the previous function in this function.  You will need to reuse and call `calculateMean()` two times in this function implementation.  The general steps to implement the standard devition should be:
 
 1. Calculate the mean of the initial values in the array by reusing
    your `calculateMean()` function.
@@ -25,7 +25,7 @@ You will not need to write any loops.  You will need to reuse most all of the pr
    again.  Notice you are (re)using this function 2 times in the implementation
    of your standard deviation calculation.
 5. The final result then is the square root of the mean of these squared differences.
-   So you are require to use the `sqrt()` function from `cmath` to get the square root
+   So you are require to use the `sqrt()` function from the `cmath` library to get the square root
    of this result.  This should be the final standard deviation that your function
    will return.
 
@@ -33,5 +33,6 @@ You will not need to write any loops.  You will need to reuse most all of the pr
 **Additional Requirements**
 
 - You must reuse your previous functions either directly or indirectly when implementing this function.
+- You cannot use any loops, or reimplement any of the previous 4 functions in the implementation of this function.
 
 

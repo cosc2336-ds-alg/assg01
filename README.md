@@ -77,7 +77,7 @@ using and adding code to for this assignment.
 
 | File Name               | Description                                                                 |
 |-------------------------|-----------------------------------------------------------------------------|
-| `src/test-libstats.cpp` | Unit tests for the five functions you are to write.                         |
+| `src/assg01-tests.cpp`  | Unit tests for the five functions you are to write.                         |
 | `include/libstats.hpp`  | Header file for function prototypes you are to add.                         |
 | `src/libstats.cpp`      | Implementation file for the functions you are to write for this assignment. |
 
@@ -88,7 +88,7 @@ finish the following setup steps.
    on GitHub using the provided assignment invitation link for the
    'Assignment Functions' for our current class semester and section.
 2. Clone the repository to your DevBox using the SSH URL to your local
-   class DevBox development environment.  Make sure that open the cloned
+   class DevBox development environment.  Make sure to open the cloned
    folder and restart inside of the correct Dev Container.
 3. Confirm that the project builds and runs, though no tests may be be
    defined or run initially.  If the project does not build on the first
@@ -119,7 +119,7 @@ declared to be a `const` parameter.  Do you know why?  We discussed
 passing in arrays as `const` parameters vs. as non constant in this
 units lecture videos.
 
-As usual a good first baby step is to uncomment the first test case
+As usual a good first baby step is to define the first test case
 for the `sumOfValues()` unit tests.  Then create the function
 prototype for your function, and create a stub implementation that
 returns a sum of `0.0`.  Make sure that these changes compile and the
@@ -160,7 +160,7 @@ the `Feedback` pull request.  It is fine if you prefer to create all
 of the issues for the assignments before you begin working on the
 tasks.
 
-As usual, create the function prototype and a stub, and uncomment the
+As usual, create the function prototype and a stub, and define the
 tests for task 2, to make sure your project still compiles and can now run
 the unit tests that you need to pass for this task 2.
 
@@ -170,17 +170,10 @@ mean of these values, returning their mean as a `double` result.
 
 You are required to reuse the `sumOfValues()` function in order
 to implement your task 2 `calculateMean()` function.  As discussed
-in the assignment description, the mean is simply the sum of the values
+in the introduction, the mean is simply the sum of the values
 divided by the total number of values being averaged.  So you can reuse
 the first function to determine the sum of the values that you are calculating
 the average of.
-
-**NOTE**: be careful about integer division.  Since the number of values
-in the array is given to you as an integer, you have to divide by this
-to get your average.  Sometimes, when you divide by an integer in
-C/C++ you end up with an integer result.  You should google
-integer division in C/C++ if you do not know what the potential issue
-is here with dividing by an integer data type.
 
 When you are satisfied your function works (make sure your project
 compiles and runs still), you should commit your changes and push them
@@ -190,8 +183,8 @@ to the `Feedback` pull request in your classroom repository.
 
 Make sure you do your prerequisite steps first, such as creating the
 issue for this task. Then uncomment the tests for this function, and
-get your project back to a compilable and runable state before
-proceeding.
+get your project back to a compilable and runable state by adding
+a stub function before proceeding.
 
 If you look closely at the definition of the standard deviation, we
 can break it up into several steps.  First of all, the standard
@@ -217,13 +210,13 @@ the values in the array passed as the second parameter.
 **NOTE**: This time the array of values cannot be a `const` parameter.
 Do you understand why not?
 
-This function is a `void` function this time, which is different as
-well.  You will be calculating the difference of each value, and
-storing the result back in the array passed in as a parameters.  As
-you should have learned/reviewed from this units materials, arrays are
-passed in by reference implicitly.  So if you modify the values of the
-array to contain the calculated differences, the results of this
-calculation will be returned back to the caller of your function.
+This function will be a `void` function.  You will be calculating the
+difference of each value, and storing the result back in the array
+passed in as a parameters.  As you should have learned/reviewed from
+this units materials, arrays are passed in by reference implicitly.
+So if you modify the values of the array to contain the calculated
+differences, the results of this calculation will be returned back to
+the caller of your function.
 
 When you are satisfied your function is working, the project still
 compiles, and you can run and pass the tests, perform the usual to
@@ -292,12 +285,13 @@ calculation of the standard deviation in the following manner.
    of this result.  This should be the final standard deviation that your function
    will return.
    
-If you have gotten all of the tasks completed to this point, you should be able to
-run and pass all of the original tests once your `calculateStandardDeviation()`
-is working correctly.  When satisfied you should commit and push your changes.
-Check your final GitHub actions at this point.  If your work is committed
-correctly, you should see you now get a green check mark and your most recent
-action passes all actions on the GitHub classroom repository now.
+If you have gotten all of the tasks completed to this point, you
+should be able to run and pass all of the original tests once your
+`calculateStandardDeviation()` is working correctly.  When satisfied
+you should commit and push your changes.  As usual make sure that you
+check the GitHub autograder after each push.  After pushing this final
+task, you should find that all tests pass (green checkmark) and that
+you get a 100/100 by the autograder.
 
 
 # Assignment Submission
@@ -306,18 +300,20 @@ For this class, the submission process is to correctly create a pull
 request(s) with changes committed and pushed to your copied repository
 for grading and evaluation.  For the assignments, you may not be able
 to complete all tasks and have all of the tests successfully
-finishing.  This is OK.  However, you should endeavor to have as many
-of the tasks completed before the deadline for the assignment as
-possible.  Also, try and make sure that you only push commits that are
-building and able to run the tests.  You may loose points for pushing
-a broken build, especially if the last build you submit is not
-properly compiling and running the tests.
+finishing.  This is OK.  However, you should try to have as many tasks
+as possible completed before the deadline.  Also, try and make sure
+that you only push commits that are building and able to run the
+tests.  You may loose points for pushing a broken build, especially if
+the last build you submit is not properly compiling and running the
+tests.  You should always check after each commit you push, and if the
+build fails, you should immediatly fix the issue and push a commit that
+builds.
 
-In this problem, up to 25 points will be given for having at least 1
+In this problem, up to 50 points will be given for having at least 1
 commit that compiles and runs the tests (and at least some attempt was
-made to work on the first task).  Thereafter 15 points are awarded for
+made to work on the first task).  Thereafter 10-15 points are awarded for
 completing each of the tasks.  However you should note that the
-autograder awards either all point for passing all tests, or no points
+autograder awards either all points for passing all tests, or no points
 if any test is failing for one of the tasks.  Also note that even if
 you pass all tests, when the instructor evaluates your assignment,
 they may remove points if you don't follow the requirements for
